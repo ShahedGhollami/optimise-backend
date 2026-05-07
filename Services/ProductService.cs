@@ -7,7 +7,7 @@ public class ProductService(IProductRepository productRepository) : IProductServ
 {
     private readonly IProductRepository _productRepository = productRepository;
 
-    public async Task<IEnumerable<Product>> GetProductsAsync(string code, string partOfDescription)
+    public async Task<IEnumerable<Product>> GetProductsAsync(string? code, string? partOfDescription)
     {
         return await _productRepository.GetProductsAsync(code, partOfDescription);
     }

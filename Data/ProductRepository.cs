@@ -7,16 +7,16 @@ public class ProductRepository(OptimiseDbContext context) : IProductRepository
 {
     private readonly OptimiseDbContext _context = context;
 
-    public async Task<IEnumerable<Product>> GetProductsAsync(string code, string partOfDescription)
+    public async Task<IEnumerable<Product>> GetProductsAsync(string? code, string? partOfDescription)
     {
         var query = _context.Products.AsQueryable();
 
-        if (!string.IsNullOrEmpty(code))
+        if (!string.IsNullOrWhiteSpace(code))
         {
             query = query.Where(p => p.Code.Contains(code));
         }
 
-        if (!string.IsNullOrEmpty(partOfDescription))
+        if (!string.IsNullOrWhiteSpace(partOfDescription))
         {
             query = query.Where(p => p.Description.Contains(partOfDescription));
         }
