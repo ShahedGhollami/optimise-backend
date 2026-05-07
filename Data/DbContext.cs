@@ -5,7 +5,7 @@ namespace Optimise.Api.Data;
 
 public class OptimiseDbContext(DbContextOptions<OptimiseDbContext> options) : DbContext(options)
 {
-    public required DbSet<Product> Products { get; set; }
+    public DbSet<Product> Products { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Optimise.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef27f1909ee9a6b0404b63ce17840bc8bc8f3b51")]
 [assembly: System.Reflection.AssemblyProductAttribute("Optimise.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Optimise.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
