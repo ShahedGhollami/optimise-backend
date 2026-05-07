@@ -6,6 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include=".gitignore" />
+  </ItemGroup>
+
 <ItemGroup>
   <PackageReference Include="Dapper" Version="2.1.72" />
   <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />

@@ -1,0 +1,11 @@
+# فایل gitignore اضافه کن
+dotnet new gitignore
+
+# فولدرهای اشتباه رو از git حذف کن
+git rm -r --cached bin/
+git rm -r --cached obj/
+
+# commit کن
+git add .
+git commit -m "fix: add gitignore and remove bin/obj"
+git push
