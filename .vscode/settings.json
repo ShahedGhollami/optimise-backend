@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net10.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/62b5c98b-5638-4fc9-bf6f-78a08f3dc234/resourceGroups/optimise-backend_group/providers/Microsoft.Web/sites/optimise-backend"
+}
